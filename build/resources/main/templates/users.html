@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cosmo/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>All Users</title>
+</head>
+<body>
+    <header>
+        <a href="/">Home</a>
+        <a href="/logout">Log out</a>
+    </header>
+    <div th:each="user : ${users}" class="user">
+        <h3>
+            <a th:href="@{/user/{id}(id=${user.id})}"><span th:text="${user.firstName}"></span></a>
+        </h3>
+    </div>
+</body>
+</html>
