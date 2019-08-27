@@ -5,7 +5,8 @@ Note: Users must set the application.properties values to your postgresql userna
 spring.datasource.username=  
 spring.datasource.password=  
 These are located [here](https://github.com/kdcouture/codefellowship/blob/master/src/main/resources/application.properties).
-This will delete and create a clean table each run unless the last line ending in create is commented out. NOTE: The database codefellowship is required for this application to run correctly. Change to update to keep data presentent.
+This will delete and create a clean table each run unless the last line ending in create is commented out or changed to update to keep data presentent.  
+NOTE: The database codefellowship is required for this application to run correctly.
 ## Routes
 ### GetMappings
 / - Home page  
