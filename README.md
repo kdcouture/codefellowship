@@ -1,6 +1,9 @@
 # codefellowship
 ## Description
 This site is an acedemic project to use Java, Sping, web security and ect.  
+  
+Run with the command line using > ./gradle bootrun < while in the root level of this projects directory.  
+  
 Note: Users must set the application.properties values to your postgresql username.  
 spring.datasource.username=  
 spring.datasource.password=  
