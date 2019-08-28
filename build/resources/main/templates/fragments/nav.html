@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div th:fragment="navAuth">
+        <div>
+            Hello, <span th:text="${p.name}"></span>!
+            <a>  </a>
+            <a href="/">Home</a>
+            <a href="/posts/create">New Post</a>
+            <a href="/users">View users</a>
+            <a href="/myprofile">My profile</a>
+            <a href="/logout">Log out</a>
+        </div>
+    </div>
+
+    <div th:fragment="navUnAuth">
+        <div>
+            <a href="/">Home</a>
+            <a href="/login">Log in</a>
+            <a href="/signup">Sign up</a>
+        </div>
+    </div>
+
+    <div th:fragment="navPrincipal">
+        <div th:if="${user}">
+            Hello, <span th:text="${user.name}"></span>!
+            <a href="/">Home</a>
+            <a href="/users">View users</a>
+            <a href="/logout">Log out</a>
+        </div>
+        <div th:unless="${user}">
+            <a href="/">Home</a>
+            <a href="/login">Log in</a>
+            <a href="/signup">Sign up</a>
+        </div>
+    </div>
+</html>

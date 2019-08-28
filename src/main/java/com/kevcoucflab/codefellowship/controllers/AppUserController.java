@@ -30,14 +30,18 @@ public class AppUserController {
 
     @PostMapping("/users")
     public RedirectView createUser(String username, String password, String firstName, String lastName) {
-        AppUser newUser = new AppUser(username,
-                // bcrypt handles hashing/salting
-                encoder.encode(password),
-                firstName, lastName);
-        appUserRepository.save(newUser);
-        Authentication authentication = new UsernamePasswordAuthenticationToken(newUser, null, new ArrayList<>());
-        SecurityContextHolder.getContext().setAuthentication(authentication);
-        return new RedirectView("/myprofile");
+        if(appUserRepository.findByUsername(username) == null) {
+            AppUser newUser = new AppUser(username,
+                    // bcrypt handles hashing/salting
+                    encoder.encode(password),
+                    firstName, lastName);
+            appUserRepository.save(newUser);
+            Authentication authentication = new UsernamePasswordAuthenticationToken(newUser, null, new ArrayList<>());
+            SecurityContextHolder.getContext().setAuthentication(authentication);
+            return new RedirectView("/myprofile");
+        }
+        return new RedirectView("/login");
+
     }
 
     @GetMapping("/login")
@@ -61,19 +65,22 @@ public class AppUserController {
     public String getMyProfile(Principal p, Model m) {
         AppUser user = appUserRepository.findByUsername(p.getName());
         m.addAttribute("user", user);
+        m.addAttribute("p", p);
         return "myprofile";
     }
 
     @GetMapping("/users")
-    public String getAllUsers(Model m) {
+    public String getAllUsers(Model m, Principal p) {
         List<AppUser> users = appUserRepository.findAll();
+        m.addAttribute("p", p);
         m.addAttribute("users", users);
         return "users";
     }
 
     @GetMapping("/user/{id}")
-    public String getOneAlbum(@PathVariable long id, Model m) {
+    public String getOneAlbum(@PathVariable long id, Model m, Principal p) {
         AppUser user = appUserRepository.findById(id).get();
+        m.addAttribute("p", p);
         m.addAttribute("user", user);
         return "user";
     }

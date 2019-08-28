@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.375s</div>
+<div class="counter">0.644s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">contextLoads</td>
-<td class="success">0.047s</td>
+<td class="success">0.060s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testRootRoute_containsCodefellowshipH1</td>
-<td class="success">0.038s</td>
+<td class="success">0.191s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testsignupRoute_containsForm</td>
-<td class="success">0.290s</td>
+<td class="success">0.393s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -97,31 +97,31 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>12:43:25.467 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
-12:43:25.474 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-12:43:25.480 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-12:43:25.500 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-12:43:25.508 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests], using SpringBootContextLoader
-12:43:25.511 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]: class path resource [com/kevcoucflab/codefellowship/CodefellowshipApplicationTests-context.xml] does not exist
-12:43:25.511 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]: class path resource [com/kevcoucflab/codefellowship/CodefellowshipApplicationTestsContext.groovy] does not exist
-12:43:25.511 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-12:43:25.512 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]: CodefellowshipApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-12:43:25.560 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
-12:43:25.611 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/kevcou/Desktop/codefellows/401/java/codefellowship/build/classes/java/main/com/kevcoucflab/codefellowship/CodefellowshipApplication.class]
-12:43:25.612 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.kevcoucflab.codefellowship.CodefellowshipApplication for test class com.kevcoucflab.codefellowship.CodefellowshipApplicationTests
-12:43:25.690 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]: using defaults.
-12:43:25.691 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-12:43:25.708 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@174b3065, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2f6a0257, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6fc22e47, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3199a109, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7f1f7747, org.springframework.test.context.transaction.TransactionalTestExecutionListener@98ba49, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ed60c0b, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@2bb7b31, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@69a816e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@43953906, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@dedd32b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@54d65354, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6952951, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6c227d8c]
-12:43:25.718 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
-12:43:25.719 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
-12:43:25.721 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
-12:43:25.721 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
-12:43:25.722 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
-12:43:25.722 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
-12:43:25.726 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2b5c0762 testClass = CodefellowshipApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7641e5d5 testClass = CodefellowshipApplicationTests, locations = '{}', classes = '{class com.kevcoucflab.codefellowship.CodefellowshipApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e8512, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@64c7b014, [ImportsContextCustomizer@6bb99544 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3249cec8, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@be3a1f4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@6ed2a3e6], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
-12:43:25.726 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
-12:43:25.726 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
-12:43:25.742 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+<pre>09:28:34.633 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
+09:28:34.643 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+09:28:34.656 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+09:28:34.694 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+09:28:34.714 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests], using SpringBootContextLoader
+09:28:34.719 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]: class path resource [com/kevcoucflab/codefellowship/CodefellowshipApplicationTests-context.xml] does not exist
+09:28:34.719 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]: class path resource [com/kevcoucflab/codefellowship/CodefellowshipApplicationTestsContext.groovy] does not exist
+09:28:34.720 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+09:28:34.721 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]: CodefellowshipApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:28:34.788 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
+09:28:34.899 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/kevcou/Desktop/codefellows/401/java/codefellowship/build/classes/java/main/com/kevcoucflab/codefellowship/CodefellowshipApplication.class]
+09:28:34.902 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.kevcoucflab.codefellowship.CodefellowshipApplication for test class com.kevcoucflab.codefellowship.CodefellowshipApplicationTests
+09:28:35.046 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]: using defaults.
+09:28:35.047 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+09:28:35.076 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4c2f76c2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6d175ca0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7fe06f2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4ee3ba35, org.springframework.test.context.support.DirtiesContextTestExecutionListener@79cd4c4d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2e68fd88, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5956b721, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@a379c2c, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@190b1603, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@70663c17, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1c656285, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2a055bd9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6b7feb94, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2ab8f468]
+09:28:35.089 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
+09:28:35.091 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
+09:28:35.095 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
+09:28:35.095 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
+09:28:35.096 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
+09:28:35.097 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
+09:28:35.102 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6f0437e1 testClass = CodefellowshipApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7743a026 testClass = CodefellowshipApplicationTests, locations = '{}', classes = '{class com.kevcoucflab.codefellowship.CodefellowshipApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e8512, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@19c9de2, [ImportsContextCustomizer@441579e8 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@738e4ce9, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@34919647, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4db89a6a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+09:28:35.104 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
+09:28:35.106 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.kevcoucflab.codefellowship.CodefellowshipApplicationTests]
+09:28:35.136 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -131,21 +131,21 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.7.RELEASE)
 
-2019-08-27 12:43:25.987  INFO 98893 --- [    Test worker] c.k.c.CodefellowshipApplicationTests     : Starting CodefellowshipApplicationTests on 8c859023008c.ant.amazon.com with PID 98893 (started by kevcou in /Users/kevcou/Desktop/codefellows/401/java/codefellowship)
-2019-08-27 12:43:25.989  INFO 98893 --- [    Test worker] c.k.c.CodefellowshipApplicationTests     : No active profile set, falling back to default profiles: default
-2019-08-27 12:43:26.741  INFO 98893 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-08-27 12:43:26.818  INFO 98893 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66ms. Found 1 repository interfaces.
-2019-08-27 12:43:27.296  INFO 98893 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$730dde64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-08-27 12:43:27.489  INFO 98893 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-08-27 12:43:27.616  INFO 98893 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-08-27 12:43:27.675  INFO 98893 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-08-28 09:28:35.484  INFO 3606 --- [    Test worker] c.k.c.CodefellowshipApplicationTests     : Starting CodefellowshipApplicationTests on 8c859023008c.ant.amazon.com with PID 3606 (started by kevcou in /Users/kevcou/Desktop/codefellows/401/java/codefellowship)
+2019-08-28 09:28:35.494  INFO 3606 --- [    Test worker] c.k.c.CodefellowshipApplicationTests     : No active profile set, falling back to default profiles: default
+2019-08-28 09:28:36.366  INFO 3606 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-28 09:28:36.451  INFO 3606 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 1 repository interfaces.
+2019-08-28 09:28:37.004  INFO 3606 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fbc488a3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-28 09:28:37.237  INFO 3606 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-28 09:28:37.431  INFO 3606 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-28 09:28:37.520  INFO 3606 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-08-27 12:43:27.729  INFO 98893 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-08-27 12:43:27.731  INFO 98893 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-08-27 12:43:27.863  INFO 98893 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-08-27 12:43:28.004  INFO 98893 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2019-08-27 12:43:28.104  INFO 98893 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-08-28 09:28:37.645  INFO 3606 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-28 09:28:37.647  INFO 3606 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-28 09:28:37.943  INFO 3606 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-28 09:28:38.151  INFO 3606 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2019-08-28 09:28:38.239  INFO 3606 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
 
 java.lang.reflect.InvocationTargetException: null
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
@@ -245,16 +245,16 @@ Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.
 	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1265) ~[postgresql-42.2.6.jar:42.2.6]
 	... 92 common frames omitted
 
-2019-08-27 12:43:28.121  INFO 98893 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6e1aff0
-2019-08-27 12:43:28.579  INFO 98893 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3b7defff'
-2019-08-27 12:43:28.581  INFO 98893 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-08-27 12:43:29.202  INFO 98893 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c8dc30d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d9cdd, org.springframework.security.web.header.HeaderWriterFilter@1c7b48ee, org.springframework.security.web.authentication.logout.LogoutFilter@2b16ae6d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@774ff31c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72e63, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d6cd993, org.springframework.security.web.session.SessionManagementFilter@583340d6, org.springframework.security.web.access.ExceptionTranslationFilter@4d6ac7f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e5a8e59]
-2019-08-27 12:43:29.693  INFO 98893 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-27 12:43:29.749  WARN 98893 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-08-27 12:43:30.243  INFO 98893 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2019-08-27 12:43:30.243  INFO 98893 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2019-08-27 12:43:30.262  INFO 98893 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 19 ms
-2019-08-27 12:43:30.301  INFO 98893 --- [    Test worker] c.k.c.CodefellowshipApplicationTests     : Started CodefellowshipApplicationTests in 4.552 seconds (JVM running for 5.454)
+2019-08-28 09:28:38.346  INFO 3606 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6f2ed9c3
+2019-08-28 09:28:39.157  INFO 3606 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e541ce9'
+2019-08-28 09:28:39.160  INFO 3606 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-28 09:28:39.966  INFO 3606 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6dd3e8c5, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f33169b, org.springframework.security.web.header.HeaderWriterFilter@47859098, org.springframework.security.web.authentication.logout.LogoutFilter@7194a4a4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@163f1d18, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@780f53d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@332a6e67, org.springframework.security.web.session.SessionManagementFilter@15db0460, org.springframework.security.web.access.ExceptionTranslationFilter@173eae46, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46e333de]
+2019-08-28 09:28:40.608  INFO 3606 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 09:28:40.680  WARN 3606 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-28 09:28:41.243  INFO 3606 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-08-28 09:28:41.244  INFO 3606 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-08-28 09:28:41.261  INFO 3606 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 17 ms
+2019-08-28 09:28:41.290  INFO 3606 --- [    Test worker] c.k.c.CodefellowshipApplicationTests     : Started CodefellowshipApplicationTests in 6.143 seconds (JVM running for 7.414)
 
 MockHttpServletRequest:
       HTTP Method = GET
@@ -350,17 +350,21 @@ MockHttpServletResponse:
     &lt;title&gt;Welcome&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;script src=&quot;/webjars/bootstrap/4.1.3/js&quot;&gt;&lt;/script&gt;
-    &lt;h1&gt;Welcome to Codefellowship&lt;/h1&gt;
-    
-    &lt;div&gt;
-        &lt;a href=&quot;/login&quot;&gt;Log in&lt;/a&gt;
-        &lt;a href=&quot;/signup&quot;&gt;Sign up&lt;/a&gt;
-    &lt;/div&gt;
+    &lt;script src=&quot;/webjars/bootstrap/4.1.3/js&quot;&gt;&lt;/script&gt;
 
-&lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.slim.min.js&quot; integrity=&quot;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js&quot; integrity=&quot;sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&quot; integrity=&quot;sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;div&gt;
+        
+        &lt;div&gt;
+            &lt;a href=&quot;/login&quot;&gt;Log in&lt;/a&gt;
+            &lt;a href=&quot;/signup&quot;&gt;Sign up&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;h1&gt;Welcome to Codefellowship&lt;/h1&gt;
+
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.slim.min.js&quot; integrity=&quot;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js&quot; integrity=&quot;sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&quot; integrity=&quot;sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
     Forwarded URL = null
@@ -377,7 +381,7 @@ MockHttpServletResponse:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6</a> at Aug 27, 2019 12:43:30 PM</p>
+<a href="http://www.gradle.org">Gradle 5.6</a> at Aug 28, 2019 9:28:42 AM</p>
 </div>
 </div>
 </body>

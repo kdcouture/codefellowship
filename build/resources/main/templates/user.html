@@ -6,10 +6,7 @@
     <title th:text="${user.firstName}"></title>
 </head>
 <body>
-<header>
-    <a href="/">Home</a>
-    <a href="/logout">Log out</a>
-</header>
+    <div th:replace="fragments/nav :: navAuth"></div>
     <div>
         <img src="https://steamuserimages-a.akamaihd.net/ugc/868480752636433334/1D2881C5C9B3AD28A1D8852903A8F9E1FF45C2C8/"/>
         <p></p>
