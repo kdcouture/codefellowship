@@ -21,5 +21,5 @@ NOTE: The database codefellowship is required for this application to run correc
 /posts/create - The form to create a new post.
 ### PostMappings
 /users - Creates a new user and adds it into the database.  
-/login - Logs the user in and redirects to myprofile
-/posts/create - Allows a user to create a new post linked to their account.
+/login - Logs the user in and redirects to myprofile  
+/posts/create - Allows a user to create a new post linked to their account.  
