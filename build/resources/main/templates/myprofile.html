@@ -6,16 +6,18 @@
     <title>My Profile</title>
 </head>
 <body>
-    <header>
-        <a href="/">Home</a>
-        <a href="/logout">Log out</a>
-    </header>
+    <div th:replace="fragments/nav :: navAuth"></div>
     <div>
         <img src="https://steamuserimages-a.akamaihd.net/ugc/868480752636433334/1D2881C5C9B3AD28A1D8852903A8F9E1FF45C2C8/"/>
         <p></p>
         <label>First name: </label><p th:text="${user.firstName}"></p>
         <label>Last name: </label><p th:text="${user.lastName}"></p>
         <label>Bio: </label><p th:text="${user.bio}"></p>
+        <h3>Posts</h3>
+        <div th:each="post : ${user.posts}">
+            <p th:text="${post.createdAt}"></p>
+            <p th:text="${post.body}"></p>
+        </div>
     </div>
 </body>
 </html>

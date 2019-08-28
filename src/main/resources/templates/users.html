@@ -6,13 +6,10 @@
     <title>All Users</title>
 </head>
 <body>
-    <header>
-        <a href="/">Home</a>
-        <a href="/logout">Log out</a>
-    </header>
+    <div th:replace="fragments/nav :: navAuth"></div>
     <div th:each="user : ${users}" class="user">
         <h3>
-            <a th:href="@{/user/{id}(id=${user.id})}"><span th:text="${user.firstName}"></span></a>
+            <a th:href="@{/user/{id}(id=${user.id})}"><span th:text="${user.username}"></span></a>
         </h3>
     </div>
 </body>
