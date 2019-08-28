@@ -13,6 +13,11 @@
         <label>First name: </label><p th:text="${user.firstName}"></p>
         <label>Last name: </label><p th:text="${user.lastName}"></p>
         <label>Bio: </label><p th:text="${user.bio}"></p>
+        <h3>Posts</h3>
+        <div th:each="post : ${user.posts}">
+            <p th:text="${post.createdAt}"></p>
+            <p th:text="${post.body}"></p>
+        </div>
     </div>
 </body>
 </html>
