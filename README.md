@@ -18,6 +18,8 @@ NOTE: The database codefellowship is required for this application to run correc
 /login - Used to show the login form.  
 /signup - Used to allow users to register a new account.  
 /myprofile - Shown after logging in, this page is the users profile page. (Private)  
+/posts/create - The form to create a new post.
 ### PostMappings
 /users - Creates a new user and adds it into the database.  
 /login - Logs the user in and redirects to myprofile
+/posts/create - Allows a user to create a new post linked to their account.
