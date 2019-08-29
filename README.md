@@ -13,6 +13,7 @@ NOTE: The database codefellowship is required for this application to run correc
 ## Routes
 ### GetMappings
 / - Home page  
+/feed - This route dispalys all followed users 3 most recent posts.  
 /users - This route displays all users in the system.  
 /user/{id} - This route will display a particular users info and profile picture. (Publicly seen)  
 /login - Used to show the login form.  
@@ -20,6 +21,7 @@ NOTE: The database codefellowship is required for this application to run correc
 /myprofile - Shown after logging in, this page is the users profile page. (Private)  
 /posts/create - The form to create a new post.
 ### PostMappings
+/addfollower - This route will add the user as a follower to the targeted profile and place the targeted profile in the follows set.  
 /users - Creates a new user and adds it into the database.  
 /login - Logs the user in and redirects to myprofile  
 /posts/create - Allows a user to create a new post linked to their account.  
