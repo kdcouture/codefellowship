@@ -84,4 +84,25 @@ public class AppUserController {
         m.addAttribute("user", user);
         return "user";
     }
+
+    @GetMapping("/feed")
+    public String getFeed(Principal p, Model m) {
+        AppUser user = appUserRepository.findByUsername(p.getName());
+        m.addAttribute("user", user);
+        m.addAttribute("p",p);
+        return "feed";
+    }
+
+    @PostMapping("/addfollower")
+    public RedirectView addFollower(long tofollow, String followerUName) {
+        System.out.println(tofollow);
+        // One directional follow, only our follow set and leaders followers set get updated.
+        AppUser leader = appUserRepository.findById(tofollow).get();
+        AppUser sheep = appUserRepository.findByUsername(followerUName);
+        sheep.joinHerd(leader);
+
+        appUserRepository.save(leader);
+
+        return new RedirectView("/myprofile");
+    }
 }

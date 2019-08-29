@@ -8,6 +8,7 @@
             <a href="/posts/create">New Post</a>
             <a href="/users">View users</a>
             <a href="/myprofile">My profile</a>
+            <a href="/feed">View feed</a>
             <a href="/logout">Log out</a>
         </div>
     </div>
@@ -24,7 +25,10 @@
         <div th:if="${user}">
             Hello, <span th:text="${user.name}"></span>!
             <a href="/">Home</a>
+            <a href="/posts/create">New Post</a>
             <a href="/users">View users</a>
+            <a href="/myprofile">My profile</a>
+            <a href="/feed">View feed</a>
             <a href="/logout">Log out</a>
         </div>
         <div th:unless="${user}">

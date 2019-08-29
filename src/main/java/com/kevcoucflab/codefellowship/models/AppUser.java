@@ -6,7 +6,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import javax.persistence.*;
 import java.sql.Date;
 import java.util.Collection;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 public class AppUser implements UserDetails {
@@ -25,6 +27,20 @@ public class AppUser implements UserDetails {
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "poster")
     List<UserPost> posts;
+
+    @ManyToMany
+    @JoinTable( // Mostly from in class
+            // Database name
+            name="followers",
+            // join columns: column where I find my own ID
+            joinColumns = { @JoinColumn(name="sheep") },
+            // inverse: column where I find someone else's ID
+            inverseJoinColumns = { @JoinColumn(name="leader") }
+    )
+    Set<AppUser> follows;
+
+    @ManyToMany(mappedBy = "follows")
+    Set<AppUser> followers;
 
     public AppUser(String username, String password, String firstName, String lastName) {
         this.username = username;
@@ -74,6 +90,33 @@ public class AppUser implements UserDetails {
 
     public List<UserPost> getPosts() {
         return posts;
+    }
+
+    public List<UserPost> getRecentPosts() {
+        List<UserPost> recent = new LinkedList<UserPost>();
+        for(int i = 0; i < 3; i++) {
+            if(i >= this.posts.size()) {
+                break;
+            }
+            recent.add(this.posts.get(this.posts.size()-1-i));
+        }
+        return recent;
+    }
+
+    public void addFollower(AppUser sheep) {
+        followers.add(sheep);
+    }
+
+    public void joinHerd(AppUser leader) {
+        follows.add(leader);
+    }
+
+    public Set<AppUser> getFollows() {
+        return follows;
+    }
+
+    public Set<AppUser> getFollowers() {
+        return followers;
     }
 
     @Override

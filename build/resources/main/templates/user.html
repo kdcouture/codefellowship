@@ -9,7 +9,14 @@
     <div th:replace="fragments/nav :: navAuth"></div>
     <div>
         <img src="https://steamuserimages-a.akamaihd.net/ugc/868480752636433334/1D2881C5C9B3AD28A1D8852903A8F9E1FF45C2C8/"/>
-        <p></p>
+        <div th:if="${user.username != p.getName()}">
+            <form action="/addfollower" method="post">
+                <input name="tofollow" type="hidden" th:value="${user.id}" id="tofollow">
+                <input name="followerUName" type="hidden" th:value="${p.getName()}" id="followerUName">
+                <input name="follow" type="submit" value="Follow">
+            </form>
+        </div>
+
         <label>First name: </label><p th:text="${user.firstName}"></p>
         <label>Last name: </label><p th:text="${user.lastName}"></p>
         <label>Bio: </label><p th:text="${user.bio}"></p>
