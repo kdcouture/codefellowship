@@ -2,7 +2,8 @@
 ## Description
 This site is an acedemic project to use Java, Sping, web security and ect.  
   
-Run with the command line using > ./gradle bootrun < while in the root level of this projects directory.  
+Run localy with the command line using > ./gradle bootrun < while in the root level of this projects directory.  
+Hosted on AWS > [http://401codefellowship.us-west-2.elasticbeanstalk.com/](http://401codefellowship.us-west-2.elasticbeanstalk.com/)  
   
 Note: Users must set the application.properties values to your postgresql username.  
 spring.datasource.username=  
